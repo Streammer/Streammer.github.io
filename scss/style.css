@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro.ttf);
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1180px;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0%, 1fr));
+  grid-template-rows: repeat(2, minmax(0%, 1fr));
+  grid-row-gap: 97px;
+  grid-column-gap: 20px;
+}
+
+.container-1 .article {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-1 .article:hover {
+  cursor: pointer;
+}
+
+.container-1 .article h3 {
+  margin: 20px 0 12px 0;
+  height: 60px;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #172D54;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container-1 .article p {
+  margin: 0;
+  max-height: 81px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: GothamPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #172D54;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-article {
+  display: grid;
+  grid-template-columns: minmax(0%, 2fr) minmax(0%, 1fr);
+  grid-template-rows: minmax(0%, 1fr);
+  grid-column-gap: 120px;
+}
+
+.main-article .main-articl__image {
+  margin-bottom: 50px;
+}
+
+.main-article .date-of-publication {
+  text-transform: uppercase;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #01306C;
+}
+
+.main-article h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50px;
+  color: #01306C;
+  margin: 18px 0 40px 0;
+}
+
+.main-article .main-article__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  max-width: 680px;
+  text-align: left;
+  color: #172D54;
+  margin-bottom: 50px;
+}
+
+.main-article .main-article__text:last-child {
+  margin-bottom: 88px;
+}
+
+.main-article .main-article__text .main-article__text_blue-bold {
+  font-weight: 600;
+  color: #006BEB;
+  text-decoration: none;
+}
+
+.main-article .main-article__content-image {
+  margin-bottom: 50px;
+}
+
+.main-article .main-article__content-image figcaption {
+  margin-top: 10px;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(23, 45, 84, 0.5);
+}
+
+.main-article .main-article__right h3 {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #01306C;
+  margin-bottom: 15px;
+}
+
+.main-article .main-article__right .articles-list {
+  display: grid;
+  grid-template-columns: minmax(0%, 144px) minmax(0%, 200px);
+  grid-template-rows: repeat(3, minmax(0%, 83px));
+  grid-auto-flow: column;
+  grid-gap: 30px 36px;
+}
+
+.main-article .main-article__right .articles-list span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #01306C;
+}
+
+.main-article .main-article__right .main-article__discounts {
+  margin-top: 50px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 40px 40px 70px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  height: 189px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-article .main-article__right .main-article__discounts button {
+  width: 231px;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #15DF92 0%, #12C681 100%);
+  box-shadow: -11px -11px 20px rgba(255, 255, 255, 0.272044), -8px -40px 22px rgba(246, 251, 255, 0.384288), -8px 0px 8px rgba(210, 211, 216, 0.50254), 19px 21px 50px #D2D3D8;
+  border-radius: 20px;
+  padding: 21px 34px 21px 32px;
+  margin-top: 30px;
+}
+
+.main-article .main-article__right .main-article__discounts button:hover {
+  cursor: pointer;
+}
+
+.main-article .main-article__right .main-article__discounts h4 {
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #172D54;
+}
+/*# sourceMappingURL=style.css.map */
